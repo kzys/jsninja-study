@@ -1,6 +1,6 @@
 function getTimeWithMS() {
     var now = new Date;
-    return now.getTime() + now.getMilliseconds()
+    return now.getTime() + (now.getMilliseconds() / 1000);
 }
 
 function benchmark(f) {
