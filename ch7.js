@@ -41,10 +41,8 @@ function plot(table) {
     }).join('|');
 
     var img = document.createElement('img');
-    img.src =
-        'http://chart.apis.google.com/chart?chbh=2,1,8&chco=440008,988432,9E3711&chs=640x240&cht=bvg&chd=t:' +
-        chd;
-    document.body.appendChild(img);
+    img.src = 'http://chart.apis.google.com/chart?chbh=2,1,8&chco=440008,988432,9E3711&chs=640x240&cht=bvg&chd=t:' + chd;
+    document.getElementsByTagName('div')[0].appendChild(img);
 }
 
 (function () {
