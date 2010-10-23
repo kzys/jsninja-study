@@ -36,7 +36,7 @@ function trim_6_15(str) {
 function plot(table) {
     var chd = table.map(function (row) {
         return row.map(function (n) {
-            return Math.round(n * 200);
+            return Math.round(n * 1000);
         }).join(',');
     }).join('|');
 
